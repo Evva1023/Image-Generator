@@ -1,0 +1,25 @@
+.spinner {
+    position: fixed;
+    top: 70vh;
+    left: 50vw;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid #222;
+    border-left-color: transparent;
+    animation: spinner 1s linear infinite;
+    display: none;
+  }
+
+  .visible {
+    display: block;
+  }
+  
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
