@@ -24,7 +24,7 @@ const generateImageRequest = async (prompt, size) => {
 
         if (!response.ok) {
             hideSpinner();
-            throw new Error('That image coukd not be generated');
+            throw new Error('That image could not be generated');
         }
 
         const data = await response.json();
